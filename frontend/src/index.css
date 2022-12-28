@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  top:0;
+  bottom: 0;
+  width: 100%;
+  display: block;
+ 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+.input-container {
+    top: 0;
+    position: sticky;
+    width: 100%;
+    height: 60%;
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.input-container:focus {
+    outline: none;
+}
+
+.input-container::selection {
+    background-color: #9a86f3;
+}
+
+#chat-page {
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    gap: 0.1rem;
+    overflow: hidden;
+}
+
+
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30rem;
+    gap: 2rem;
+    overflow: auto;
+    overflow-y: auto;
+    max-width: 500px;
+}
+
+.chat-messages::-webkit-scrollbar {
+    width: 0.2rem;
+    
+}
+
+
+.message {
+    display: flex;
+    align-items: center;
+    width: 100%
+}
+
+
+
+
+.content {
+    max-width: 40%;
+    overflow-wrap: break-word;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+    color: #d1d1d1;
+}
+
+.sended {
+
+    justify-content: flex-end;
+    
+
+}
+
+
+.sended.content {
+    background-color: #4f04ff21;
+}
+
+.recieved {
+    justify-content: flex-start;
+}
+
+.recieved.content {
+    background-color: #9900ff20;
+}
+
+@media only screen and (max-width: 600px) {
+    .input-container {
+        width: 90%;
+    }
+
+    .chat-messages {
+        height: 20rem;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    #chat-page {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
