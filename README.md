@@ -14,11 +14,11 @@ A Chat application where users can send messages in a public room using Socket.I
 
 <h1>Backend Dependencies</h1>
 <ul>
-cors
-expresss
-dotenv
-mongoose
-socket.io
+<li>cors</li>
+<li>expresss</li>
+<li>dotenv</li>
+<li>mongoose</li>
+<li>socket.io</li>
 </ul>
 
 
