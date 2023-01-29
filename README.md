@@ -25,3 +25,7 @@ A Chat application where users can send messages in a public room using Socket.I
 <h1>Scripts</h1>
 <li>backend - npm start</li>
 <li>frontend - npm start</li>
+
+
+<h1>Preview</h1>
+<img src="https://user-images.githubusercontent.com/98666468/215350813-e5527d6c-d8e1-48d9-a1d9-4e789de53e52.png" />
